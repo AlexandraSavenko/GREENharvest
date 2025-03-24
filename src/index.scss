@@ -1,5 +1,6 @@
 @import './scss/variables';
-
+@import './scss/breakpoints';
+@import './scss/mixins.scss';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,24 +42,35 @@
   .container {
     padding: 0 20px;
     margin: 0 auto;
-  }
-  
-  @media only screen and (min-width: 375px) {
-    .container {
+    @include media(mobile){
       max-width: 375px;
     }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .container {
+    @include media(tablet){
       padding: 0 32px;
       max-width: 768px;
     }
-  }
-  
-  @media only screen and (min-width: 1280px) {
-    .container {
+    @include media(desktop){
       padding: 0 100px;
       max-width: 1280px;
     }
   }
+  
+  // @media only screen and (min-width: 375px) {
+  //   .container {
+  //     max-width: 375px;
+  //   }
+  // }
+  
+  // @media only screen and (min-width: 768px) {
+  //   .container {
+  //     padding: 0 32px;
+  //     max-width: 768px;
+  //   }
+  // }
+  
+  // @media only screen and (min-width: 1280px) {
+  //   .container {
+  //     padding: 0 100px;
+  //     max-width: 1280px;
+  //   }
+  // }
