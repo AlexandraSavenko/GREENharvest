@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --black: #141414;
+  --green: #576F35;
+  --beetroot: #7A3145;
+  --main-text: #FBFBFB;
+  --faded: #7a31447d;
+  --font-family: "Inter Tight", serif;
+  --second-family: "Abril Fatface", serif;
+}
+
+ul{
+  list-style-type: none;
+}
+body{
+  background-color: var(--green);
+  font-family: var(--main-font), var(--fallback-font);
+  color: var(--white);
+  overflow-x: hidden;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.wrapper {
+  /* min-width: 335px;
+  margin: 100px 20px 40px; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 0 100px;
+    max-width: 1280px;
+  }
+}
