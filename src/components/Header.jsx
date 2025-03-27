@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../images/logo.svg";
 import '../scss/Header.scss'
 import { useState } from "react";
 import clsx from "clsx";
@@ -10,7 +10,6 @@ export default function Header (){
         <div className="container">
             <div className="header-wrap">
         <Logo/>
-        {/* <p>GREEN HARVEST</p> */}
         <div className="b-menu" onClick={()=>{
             setNavOpen(!navOpen)
         }}>

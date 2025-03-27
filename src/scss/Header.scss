@@ -15,26 +15,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
     position: relative;
 }
 .b-menu {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 2.25rem;
-    height: 2rem;
+    width: fit-content;
+    height: auto;
     
 }
-.b-menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: $_main_text;
-    border-radius: 0.2rem;
-    @include media (desktop){
-        display: none;
-    }
-}
+
 .header-nav{
     display: none;
 
