@@ -31,14 +31,16 @@
     list-style-type: none;
   }
   body{
-    background-color: $green;
-    font-family: $font-family, $second-family;
-    color: $main-text;
+    background-color: $_green;
+    font-family: $_font_family, $_second_family;
+    color: $_main_text;
     overflow-x: hidden;
     width: 100%;
     flex-wrap: wrap;
   }
- 
+ a{
+  text-decoration: none;
+ }
   .container {
     padding: 0 20px;
     margin: 0 auto;
