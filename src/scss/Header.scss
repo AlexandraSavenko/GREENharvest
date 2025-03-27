@@ -7,15 +7,16 @@ header{
         width: 100%;
         top: 20px;
 }
-.header-logo{
-    width: 194px;
-    height: 18px;
-}
+
 .header-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.header-logo{
+    width: 194px;
+    height: 18px;
 }
 .b-menu {
     display: flex;
@@ -29,8 +30,8 @@ header{
 .header-nav{
     display: none;
     @include media (desktop){
-        display: flex;    
-        align-items: center;
+    display: flex;    
+    align-items: center;
     gap: 20px;
     }
 }
@@ -45,9 +46,34 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include media (tablet){
+    width: 50%;
+    left: 50%;
+  }
+}
+.back-drop{
+    width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.back-drop-open{
+    opacity: 1;
+  visibility: visible;
 }
 .close-menu-btn{
-    align-self: flex-end;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 88px;
     @include media (desktop){
         display: none;
     }
@@ -58,12 +84,14 @@ header{
     align-items: center;
     gap: 8px;
     min-height: 52px;
+    height: auto;
     @include media (desktop){
         flex-direction: row;
     }
   }
 
   .header-menu-link {
+    display: block;
     font-family: $_second_family;
     font-weight: 500;
     line-height: 1.25;
@@ -84,20 +112,31 @@ header{
     background-color: #fbfbfb;
   }
 .header-btn {
+    width: fit-content;
     padding: 16px 32px;
     border-radius: 30px;
     border: none;
-    background-color: #7a3145;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+    text-transform: uppercase;    
+    background-color: $_main_text;
+    color: $_beetroot;
     transition: background-color 250ms linear;
+    align-self: center;
+    @include media (desktop){
+        background-color: $_beetroot;
+        color: $_main_text;
+    }
   }
 
   .header-btn:hover,
   .header-btn:focus {
-    background-color: #622133;
+    background-color: $_beetroot;
+    color: $_main_text;
+    @include media (desktop){
+        background-color: $_main_text;
+        color: $_beetroot;
+    }
   }

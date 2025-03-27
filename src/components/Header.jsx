@@ -17,6 +17,7 @@ export default function Header (){
         }}>
             <Burger/>
         </div>
+        <div className={clsx('back-drop', navOpen && 'back-drop-open')}></div>
         <nav className={clsx('header-nav', navOpen && 'open')}>
         <IoClose className="close-menu-btn" onClick={()=>{
             setNavOpen(!navOpen)
