@@ -16,13 +16,38 @@ header{
     justify-content: space-between;
     align-items: center;
     border: 1px solid red;
+    position: relative;
+}
+.b-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 2.25rem;
+    height: 2rem;
+    
+}
+.b-menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: $_main_text;
+    border-radius: 0.2rem;
+    @include media (desktop){
+        display: none;
+    }
 }
 .header-nav{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+    display: none;
 
+    @include media (desktop){
+        display: flex;    
+        align-items: center;
+    gap: 20px;
+    }
+}
+.open{
+    display: flex;
+    background-color: #622133;
+}
 .header-menu-list {
     display: flex;
     align-items: center;
