@@ -33,12 +33,18 @@
     @include media (tablet){
         padding: 100px 64px;
     }
+    @include media (desktop){
+        padding: 100px;
+    }
 }
 .s-how{
     background-color: $_green;
     padding: 80px 20px;
     @include media (tablet){
         padding: 100px 159px;
+    }
+    @include media (desktop){
+        padding: 100px;
     }
 }
 .h-image-wrap{
@@ -49,10 +55,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include media (tablet){
-    min-width: 640px;
-    min-height: 640px;
-  }
 }
 .h-image-wrap img {
     max-width: 100%;
@@ -64,6 +66,10 @@
     @include media (tablet){
         min-width: 640px;
         min-height: 640px;
+    }
+    @include media (desktop){
+        min-width: 430px;
+        min-height: 559px;
     }
 }
 .image-overlay{
