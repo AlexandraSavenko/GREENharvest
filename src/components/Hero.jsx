@@ -9,6 +9,7 @@ export default function Hero () {
         highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality 
         vegetables in expertly curated vegetable baskets delivered to you.</p>        
         </div>
+        <div className="hero-image"></div>
         </div>
 
          </section>
