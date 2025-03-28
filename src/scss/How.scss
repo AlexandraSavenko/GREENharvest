@@ -7,24 +7,17 @@
   margin: -1px;
   border: 0;
   padding: 0;
-  
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-// .how-section{
-//     margin: 0 auto;
-//     width: 100%;
-//     background: linear-gradient(
-//       90deg,
-//       $_beetroot 50%,
-//       $_green 50%
-//     );
-//     margin-top: -2px;
-// }
-.h-wrapper{
+.how-section .container {
+    padding: 0;
+}
+
+.how{
     display: flex;
     flex-direction: column;
     @include media (desktop){
@@ -32,9 +25,135 @@
     }
 }
 
-.h-image-wrap{
+.f-how{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
     background-color: $_beetroot;
 }
-.h-text-wrap{
+.s-how{
     background-color: $_green;
+    padding: 80px 20px;
+}
+.h-image-wrap{
+  width: fit-content;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h-image-wrap img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 30px;
+    min-width: 335px;
+    min-height: 450px;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    background-color: rgba(20, 20, 20, 0.3);
+    width: 100%;
+    height: 100%;
+}
+// .h-text-wrap{
+//     background-color: $_green;
+// }
+
+.orderStepsHeader{
+    font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+.orderStepsHeader span{
+    color: rgba(251, 251, 251, 0.3);
+
+}
+.orderStepsText{
+font-family: $_second_family;
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+
+.orderStepsList {
+    counter-reset: number 0;
+position: relative;
+}
+.orderStepsList li{
+    position: relative;
+    border-radius: 15px;
+padding: 12px 27px 12px 24px;
+background-color: $_main_text;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: -0.02em;
+color: rgba(20, 20, 20, 0.6);
+display: flex;
+align-items: center;
+gap: 24px;
+margin-bottom: 20px;
+counter-increment: number;
+}
+
+.orderStepsList li p{
+    font-family: $_second_family;
+font-weight: 400;
+font-size: 12px;
+line-height: 117%;
+letter-spacing: -0.02em;
+color: rgba(20, 20, 20, 0.6);
+}
+
+.orderStepsList li p span{
+    font-weight: 700;
+    color: $_black;
+}
+
+.orderStepsList li::before{
+    content: counter(number);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-style: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: $_main_text;
+    background-color: $_beetroot;
+    border: 5px solid rgba(122, 49, 69, 0.3);
+    border-radius: 100%;
+    background-clip: content-box;
+}
+.orderStepNum{
+    font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: $_main_text;
+width: 52px;
+height: 52px;
+border-radius: 100%;
+flex-shrink: 0;
+background: radial-gradient(
+    $_beetroot,
+    $_beetroot 50%,
+    $_faded 50%,
+    $_faded 100%
+);
 }

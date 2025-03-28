@@ -2,8 +2,7 @@
 import '../scss/Hero.scss'
 export default function Hero () {
     return <section className='hero-section'>
-        <div className="hero">
-     <div className="container hero-container">
+     <div className="container hero">
         <div className="hero-content">
      <h1 className="hero-title">ORGANIC VEGETABLES TO YOUR DIET TODAY!</h1>
      <p className="hero-text">Our expertly curated vegetable baskets are made with the freshest, 
@@ -11,6 +10,6 @@ export default function Hero () {
         vegetables in expertly curated vegetable baskets delivered to you.</p>        
         </div>
         </div>
-        </div>
+
          </section>
 }
