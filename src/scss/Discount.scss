@@ -1,0 +1,50 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+.discount{
+    background-color: $_main_text;
+    color: $_black;
+    padding: 80px 10px;
+    @include media (tablet){
+        padding: 100px 16px;
+    }
+    @include media (desktop){
+        padding: 100px;
+    }
+}
+
+.discount h2 {
+    position: relative;
+    font-weight: 600;
+font-size: 48px;
+line-height: 104%;
+letter-spacing: -0.01em;
+@include media (tablet){
+    font-size: 64px;
+}
+@include media (desktop){
+    font-size: 76px;
+}
+}
+.discount .span{
+    background-color: $_green;
+    color: $_main_text;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    @include media (tablet){
+        padding: 8px 16px;
+    }
+    @include media (desktop){
+        padding-left: 13px;
+    }
+}
+// .discount .span::before {
+//     content: '';
+//     height: inherit;
+//     width: 13px;
+//     background-color: red;
+//     border-radius: 12px;
+// position: absolute;
+// top: 0;
+// left: -2px;
+// }
