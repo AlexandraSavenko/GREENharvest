@@ -17,6 +17,11 @@
     line-height: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .harvestBox h2 {
+    max-width: 751px;
+  }
+}
 
 .harvestBox h2 span {
   color: rgba(251, 251, 251, 0.3);
@@ -36,6 +41,11 @@
     line-height: 125%;
     margin-top: 25px;
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .harvestBox p {
+    max-width: 751px;
   }
 }
 
@@ -60,6 +70,13 @@
     padding: 50px 100px;
     margin-left: 36px;
     margin-right: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formWrapper {
+    flex-grow: 1;
+    padding: 50px;
+    margin: 0;
   }
 }
 
@@ -151,6 +168,12 @@
     padding: 50px;
     margin-left: 36px;
     margin-right: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .socMedia {
+    padding: 50px;
+    margin: 0;
   }
 }
 
