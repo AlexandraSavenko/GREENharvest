@@ -3,6 +3,9 @@
 .organicVege {
     background-color: $_beetroot;
     padding: 80px 20px;
+    @include media (desktop){
+        padding: 100px;
+    }
 }
 
 .organicVege h2{
