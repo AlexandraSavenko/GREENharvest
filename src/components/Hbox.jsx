@@ -1,6 +1,8 @@
 import HarvestBox_1x_min from "../images/HarvestBox_1x_min.jpg"
 import HarvestBox_2x_min from "../images/HarvestBox_2x_min.jpg"
 import '../scss/Hbox.scss'
+import { Formik, Form, Field } from "formik";
+
 
 export default function Hbox (){
     return <section className='harvestBox-section'>
@@ -10,9 +12,27 @@ export default function Hbox (){
 <div className='box-wrapper'>
 <div className='formWrapper'>
     <h3>ordering from us is quick and easy! Fill out this form below and we will contact you!</h3>
+    <Formik initialValues={{
+        username: '',
+        email: '',
+        comment: '',
+    }} onSubmit={(value, action)=> {
+        console.log(value)
+        action.resetForm()
+    }}>
+      <Form>
+        <Field type="text" name="username"/>
+        <Field type="email" name="email"/>
+        <Field as="textarea" name="comment" rows="5" />
+        <button type="submit">send</button>
+      </Form>
+    </Formik>
 </div>
     <div className='socMedia'>
+        <div className="socMedia-image">
         <img srcSet={`${HarvestBox_2x_min}, ${HarvestBox_1x_min}`} src={HarvestBox_1x_min} alt="a woman is squizing lemon juice into a jar or some vegetables" width={200}/>
+        <div className="overlay"></div>
+        </div>
         <p>Follow us on our social networks:</p>
         <ul className='socMediaLinks'>
             <li><a href="">instagram</a></li>
