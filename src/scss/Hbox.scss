@@ -34,9 +34,12 @@ gap: 24px;
 }
 .formWrapper{
     background-color: $_main_text;
-    padding: 50px;
+    padding: 40px 20px;
+    border-radius: 30px;
 }
 .formWrapper h3{
+    font-size: 24px;
+line-height: 108%;
     color: $_black;
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -46,6 +49,52 @@ gap: 24px;
 }
 .formWrapper h3 span:nth-child(2){
     color: $_green;
+}
+
+.hbox-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hbox-input{
+    border: 1px solid rgba(20, 20, 20, 0.2);
+border-radius: 30px;
+padding: 14px 16px;
+
+&::placeholder{
+    font-family: $_second_family;
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+color: $_black;
+}
+}
+.hbox-input:focus{
+    outline: none;
+    border: 1px solid $_green;
+    &::placeholder{
+        color:rgba(53, 50, 50, 0.119)
+    }
+}
+.hbox-comment{
+    border-radius: 15px;
+}
+.hbox-form button{
+    border-radius: 30px;
+padding: 16px 129px;
+background-color: $_green;
+font-weight: 600;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: $_main_text;
+border: none;
+}
+.hbox-form button:hover{
+    font-size: 16px;
+    padding: 14px 129px;
 }
 .socMedia{
     background-color: $_green;

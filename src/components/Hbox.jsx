@@ -21,9 +21,9 @@ export default function Hbox (){
         action.resetForm()
     }}>
       <Form className="hbox-form">
-        <Field placeholder='' className='hbox-input hbox-name' type="text" name="username"/>
-        <Field placeholder='' className='hbox-input hbox-email' type="email" name="email"/>
-        <Field placeholder='' className='hbox-input hbox-comment' as="textarea" name="comment" rows="5" />
+        <Field placeholder='Full Name' className='hbox-input hbox-name' type="text" name="username"/>
+        <Field placeholder='Email' className='hbox-input hbox-email' type="email" name="email"/>
+        <Field placeholder='Comment' className='hbox-input hbox-comment' as="textarea" name="comment" rows="5" />
         <button type="submit">send</button>
       </Form>
     </Formik>
