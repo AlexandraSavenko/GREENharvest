@@ -125,12 +125,14 @@
 }
 
 .socMedia img {
+  display: block;
+  max-width: 100%;
   border-radius: 15px;
-  /* width: 295px; */
   min-height: 273px;
   width: 100%;
-  /* height: auto; */
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .socMedia p {
