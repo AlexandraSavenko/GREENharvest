@@ -124,6 +124,11 @@
   padding: 40px 20px;
 }
 
+.socMedia-image {
+  position: relative;
+  border-radius: 15px;
+}
+
 .socMedia img {
   display: block;
   max-width: 100%;
@@ -133,6 +138,16 @@
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.socMedia-image .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
 }
 
 .socMedia p {
