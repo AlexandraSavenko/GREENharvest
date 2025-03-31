@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import How from './components/How'
 import Discount from './components/Discount'
 import Veges from './components/Veges'
+import Reviews from './components/Reviews'
+
 
 function App() {
    
@@ -13,6 +15,8 @@ return <div>
      <How/>
      <Discount/>
      <Veges/>
+     <Reviews/>
+
 </div>
 
 }
