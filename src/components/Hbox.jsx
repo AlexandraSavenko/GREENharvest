@@ -12,7 +12,7 @@ export default function Hbox (){
 <div className='box-wrapper'>
 <div className='formWrapper'>
     <h3>ordering <span>from us</span>  is quick and easy! Fill out <span>this form</span>  below and we will contact you!</h3>
-    <Formik initialValues={{
+    {/* <Formik initialValues={{
         username: '',
         email: '',
         comment: '',
@@ -26,7 +26,7 @@ export default function Hbox (){
         <Field placeholder='Comment' className='hbox-input hbox-comment' as="textarea" name="comment" rows="5" />
         <button type="submit">send</button>
       </Form>
-    </Formik>
+    </Formik> */}
 </div>
     <div className='socMedia'>
         <div className="socMedia-image">

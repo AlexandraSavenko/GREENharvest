@@ -32,8 +32,8 @@ export default function Reviews () {
         }
       }
       }
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide className='slide'>
         <img className='reviewImg' src={John_min} alt="John Wax shares his oppinion" />
