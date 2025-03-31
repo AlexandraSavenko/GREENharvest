@@ -11,6 +11,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .harvestBox h2 {
+    font-size: 64px;
+    line-height: 100%;
+  }
+}
 
 .harvestBox h2 span {
   color: rgba(251, 251, 251, 0.3);
@@ -21,7 +27,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
+  margin-top: 30px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .harvestBox p {
+    font-size: 16px;
+    line-height: 125%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
 
 .box-wrapper {
@@ -39,6 +54,13 @@
   background-color: #FBFBFB;
   padding: 40px 20px;
   border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .formWrapper {
+    padding: 50px 100px;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
 }
 
 .formWrapper h3 {
@@ -111,6 +133,7 @@
   text-transform: uppercase;
   color: #FBFBFB;
   border: none;
+  margin-top: 10px;
 }
 
 .hbox-form button:hover {
@@ -122,6 +145,13 @@
   background-color: #576F35;
   border-radius: 30px;
   padding: 40px 20px;
+}
+@media screen and (min-width: 768px) {
+  .socMedia {
+    padding: 50px;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
 }
 
 .socMedia-image {
@@ -159,6 +189,13 @@
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
 }
+@media screen and (min-width: 768px) {
+  .socMedia p {
+    font-size: 18px;
+    line-height: 111%;
+    margin-top: 50px;
+  }
+}
 
 .socMediaLinks {
   display: flex;
@@ -181,4 +218,10 @@
   line-height: 108%;
   letter-spacing: -0.01em;
   color: #FBFBFB;
+}
+@media screen and (min-width: 768px) {
+  .socMedia a {
+    font-size: 32px;
+    line-height: 100%;
+  }
 }/*# sourceMappingURL=Hbox.css.map */
