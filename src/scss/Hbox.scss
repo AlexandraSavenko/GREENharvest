@@ -41,6 +41,12 @@ gap: 24px;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+.formWrapper h3 span:nth-child(1){
+    color: $_beetroot;
+}
+.formWrapper h3 span:nth-child(2){
+    color: $_green;
+}
 .socMedia{
     background-color: $_green;
     border-radius: 30px;

@@ -1,0 +1,103 @@
+.harvestBox {
+  background-color: #7A3145;
+  padding-top: 80px;
+  padding-bottom: 62px;
+}
+
+.harvestBox h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.harvestBox h2 span {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.harvestBox p {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  margin-bottom: 40px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .box-wrapper {
+    flex-direction: row;
+  }
+}
+
+.formWrapper {
+  background-color: #FBFBFB;
+  padding: 50px;
+}
+
+.formWrapper h3 {
+  color: #141414;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.formWrapper h3 span:nth-child(1) {
+  color: #7A3145;
+}
+
+.formWrapper h3 span:nth-child(2) {
+  color: #576F35;
+}
+
+.socMedia {
+  background-color: #576F35;
+  border-radius: 30px;
+  padding: 40px 20px;
+}
+
+.socMedia img {
+  border-radius: 15px;
+  /* width: 295px; */
+  min-height: 273px;
+  width: 100%;
+  /* height: auto; */
+  overflow: hidden;
+}
+
+.socMedia p {
+  margin-top: 20px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.socMediaLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socMediaLinks li:not(:last-child)::after {
+  content: "/";
+  margin: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+}
+
+.socMedia a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: #FBFBFB;
+}/*# sourceMappingURL=Hbox.css.map */

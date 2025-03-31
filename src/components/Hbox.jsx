@@ -11,7 +11,7 @@ export default function Hbox (){
     <p>Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best nature has to offer!</p>
 <div className='box-wrapper'>
 <div className='formWrapper'>
-    <h3>ordering from us is quick and easy! Fill out this form below and we will contact you!</h3>
+    <h3>ordering <span>from us</span>  is quick and easy! Fill out <span>this form</span>  below and we will contact you!</h3>
     <Formik initialValues={{
         username: '',
         email: '',
@@ -20,10 +20,10 @@ export default function Hbox (){
         console.log(value)
         action.resetForm()
     }}>
-      <Form>
-        <Field type="text" name="username"/>
-        <Field type="email" name="email"/>
-        <Field as="textarea" name="comment" rows="5" />
+      <Form className="hbox-form">
+        <Field placeholder='' className='hbox-input hbox-name' type="text" name="username"/>
+        <Field placeholder='' className='hbox-input hbox-email' type="email" name="email"/>
+        <Field placeholder='' className='hbox-input hbox-comment' as="textarea" name="comment" rows="5" />
         <button type="submit">send</button>
       </Form>
     </Formik>
