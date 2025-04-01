@@ -7,35 +7,80 @@
 }
 
 .footerContent{
-    max-width: 296px;
-}
-.footerNav{
-    font-weight: 600;
-font-size: 28px;
-line-height: 100%;
-letter-spacing: -0.01em;
-    color: vars.$main_text;
-    text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    max-width: 296px;
+    @include mixins.media (tablet){
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: none;
+    }
+}
+.footerLogoBox{
+    @include mixins.media (tablet){
+        max-width: 265px;
+    }
+}
+.footerLogo{
+    min-width: 168px;
+    @include mixins.media (tablet){
+        min-width: 194px;
+        min-height: 18px;
+    }
 }
 
-.footerText{
+.footerLogoBox p{
     font-family: vars.$second_family;
-    font-weight: 400;
+font-weight: 400;
 font-size: 14px;
 line-height: 129%;
-    margin-top: 14px;
-    margin-bottom: 40px;
+color: vars.$main_text;
+margin-top: 14px;
+margin-bottom: 40px;
+@include mixins.media (tablet){
+    font-size: 16px;
+    line-height: 125%; 
+    margin-top: 25px;
 }
+}
+// .footerNav{
+//     font-weight: 600;
+// font-size: 28px;
+// line-height: 100%;
+// letter-spacing: -0.01em;
+//     color: vars.$main_text;
+//     text-decoration: none;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 14px;
+// }
 
+.footerInfo {
+    @include mixins.media(tablet){
+        min-width: 215px;
+    }
+}
 .footerContacts{
     margin-top: 40px;
     max-width: 179px;
     display: flex;
     flex-direction: column;
     gap: 14px;
+    @include mixins.media (tablet){
+        margin-top: 64px;
+        gap: 25px;
+    }
+}
+.footerContacts p{
+font-weight: 600;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.01em;
+color: vars.$main_text;
+@include mixins.media(tablet){
+  font-size: 18px;
+line-height: 111%;  
+}
 }
 
  .footerPolicy{
@@ -49,6 +94,10 @@ line-height: 129%;
 font-size: 12px;
 line-height: 133%;
 letter-spacing: -0.01em;
-color: rgba(251, 251, 251, 0.5);;
+color: rgba(251, 251, 251, 0.5);
+@include mixins.media(tablet){
+    font-size: 18px;
+line-height: 111%;
+}
  }
 
