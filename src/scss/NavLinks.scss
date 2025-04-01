@@ -1,0 +1,15 @@
+@use './mixins';
+@use './vars';
+.footerList{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footerItem{
+font-weight: 600;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: -0.01em;
+color: vars.$main_text;
+}
