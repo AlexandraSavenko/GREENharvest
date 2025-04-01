@@ -2,12 +2,12 @@ import clsx from "clsx";
 import '../scss/NavLinks.scss'
 export default function NavLinks ({location}){
     const list = clsx({
-        header: location === 'header',
+        headerList: location === 'header',
         footerList: location === 'footer',
     }
       );
       const item = clsx({
-        header: location === 'header',
+        headerItem: location === 'header',
         footerItem: location === 'footer',
     }
       );

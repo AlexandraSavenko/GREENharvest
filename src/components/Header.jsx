@@ -4,6 +4,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import Burger from '../images/burger-min.svg'
 import { IoClose } from "react-icons/io5";
+import NavLinks from './NavLinks'
 
 
 export default function Header (){
@@ -22,12 +23,12 @@ export default function Header (){
         <IoClose className="close-menu-btn" onClick={()=>{
             setNavOpen(!navOpen)
         }} />
-
-            <ul className="header-menu-list">
+        <NavLinks location={'header'}/>
+            {/* <ul className="header-menu-list">
                 <li><a className="header-menu-link" href='#how'>how it works</a></li>
                 <li><a className="header-menu-link" href='#veges'>vegetables</a></li>
                 <li><a className="header-menu-link" href='#reviews'>reviews</a></li>
-            </ul>
+            </ul> */}
             <button className="header-btn">shop now</button>
         </nav>
         </div>
