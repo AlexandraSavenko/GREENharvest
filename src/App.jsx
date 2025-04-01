@@ -6,7 +6,7 @@ import Discount from './components/Discount'
 import Veges from './components/Veges'
 import Reviews from './components/Reviews'
 import Hbox from './components/Hbox'
-
+import Footer from './components/Footer'
 
 function App() {
    
@@ -18,6 +18,7 @@ return <div>
      <Veges/>
      <Reviews/>
      <Hbox/>
+     <Footer/>
 
 </div>
 
