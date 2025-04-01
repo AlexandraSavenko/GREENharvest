@@ -1,5 +1,8 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+// @use '../scss/variables';
+@use '../scss/vars';
+@use '../scss/mixins';
 
 .hero-section .container {
   padding: 0;
@@ -7,7 +10,7 @@
 .hero{
   display: flex;
   flex-direction: column;
-  @include media (desktop){
+  @include mixins.media (desktop){
 flex-direction: row;
   }
 }
@@ -55,23 +58,23 @@ min-height: 370px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-@include media (tablet){
+@include mixins.media (tablet){
   min-height: 539px;
   min-width: 768px;
 }
-@include media (desktop){
+@include mixins.media (desktop){
   min-width: 650px;
 }
 }
 .hero-content {
     min-height: 302px;
     padding: 100px 20px 0 20px;
-    @include media(tablet){
+    @include mixins.media(tablet){
         max-width: 768px;
         min-height: 313px;
         padding: 122px 32px 50px;
     }
-    @include media(desktop){
+    @include mixins.media(desktop){
       padding: 238px 28px 158px 100px;
         min-height: 800px;
     }
@@ -80,37 +83,37 @@ background-size: cover;
 .hero-title{
     letter-spacing: 1.5;
     margin-bottom: 20px;
-    font-family: $_font_family;
+    font-family: vars.$font_family;
     font-weight: 600;
     font-size: 48px;
     line-height: 100%;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: $_main_text;
-    @include media(tablet){
+    color: vars.$main_text;
+    @include mixins.media(tablet){
         font-size: 76px;
     margin-bottom: 25px;
     line-height: 100%;
 
     }
-    @include media(desktop){
+    @include mixins.media(desktop){
         margin-bottom: 128px;
     }
     }
     .hero-text{
-        font-family: $_second_family;
+        font-family: vars.$second_family;
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
-    color: $_main_text;
+    color: vars.$main_text;
     margin-bottom: 40px;
-    @include media(tablet){
+    @include mixins.media(tablet){
     padding-bottom: 0;
         margin-bottom: 50px;
         font-size: 16px;
         line-height: 125%;
     }
-    @include media(desktop){
+    @include mixins.media(desktop){
         font-size: 16px;
         line-height: 125%;
     }

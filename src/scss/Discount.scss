@@ -1,13 +1,15 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+@use '../scss/vars';
+@use '../scss/mixins';
 .discount{
-    background-color: $_main_text;
-    color: $_black;
+    background-color: vars.$main_text;
+    color: vars.$black;
     padding: 80px 10px;
-    @include media (tablet){
+    @include mixins.media (tablet){
         padding: 100px 16px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding: 100px;
     }
 }
@@ -18,23 +20,23 @@
 font-size: 48px;
 line-height: 104%;
 letter-spacing: -0.01em;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 64px;
 }
-@include media (desktop){
+@include mixins.media (desktop){
     font-size: 76px;
 }
 }
 .discount .span{
-    background-color: $_green;
-    color: $_main_text;
+    background-color: vars.$green;
+    color: vars.$main_text;
     padding: 3px 10px;
     border-radius: 12px;
     display: inline-block;
-    @include media (tablet){
+    @include mixins.media (tablet){
         padding: 8px 16px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding-left: 13px;
     }
 }

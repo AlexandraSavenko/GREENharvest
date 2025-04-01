@@ -1,9 +1,12 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+
+@use '../scss/vars';
+@use '../scss/mixins';
 .organicVege {
-    background-color: $_beetroot;
+    background-color: vars.$beetroot;
     padding: 80px 20px;
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding: 100px;
     }
 }
@@ -13,7 +16,7 @@ font-weight: 600;
 font-size: 48px;
 line-height: 104%;
 letter-spacing: -0.01em;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 64px;
 line-height: 100%;
 max-width: 508px;
@@ -23,13 +26,13 @@ max-width: 508px;
     color: rgba(251, 251, 251, 0.3);
 }
 .organicVege p{
-    font-family: $_second_family;
+    font-family: vars.$second_family;
     font-weight: 400;
 font-size: 14px;
 line-height: 129%;
 margin-top: 20px;
 margin-bottom: 40px;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 16px;
     line-height: 125%;
     max-width: 626px;
@@ -44,33 +47,33 @@ margin-bottom: 40px;
 }
 
 .vegeList li {
-    background-color: $_main_text;
+    background-color: vars.$main_text;
     padding: 32px 26px;
     border-radius: 40px;
-    @include media (tablet){
+    @include mixins.media (tablet){
         padding: 32px 30px;
         flex-grow: 1;
     }
 }
 .vegeList h3 {
-    color: $_beetroot;
+    color: vars.$beetroot;
     font-weight: 600;
 font-size: 28px;
 line-height: 100%;
 letter-spacing: -0.01em;
 margin-bottom: 12px;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 32px;
 }
 }
 
 .vegeList p {
-    color: $_black;
+    color: vars.$black;
     font-weight: 600;
 font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.01em;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 14px;
     line-height: 129%;
     margin-top: 0;

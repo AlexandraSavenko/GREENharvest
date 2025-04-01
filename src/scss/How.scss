@@ -1,5 +1,9 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+
+@use '../scss/vars';
+@use '../scss/mixins';
+
 .visually_hidden{
     position: absolute;
   width: 1px;
@@ -20,7 +24,7 @@
 .how{
     display: flex;
     flex-direction: column;
-    @include media (desktop){
+    @include mixins.media (desktop){
         flex-direction: row;
     }
 }
@@ -29,21 +33,21 @@
     display: flex;
     justify-content: center;
     padding: 40px 0;
-    background-color: $_beetroot;
-    @include media (tablet){
+    background-color: vars.$beetroot;
+    @include mixins.media (tablet){
         padding: 100px 64px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding: 100px;
     }
 }
 .s-how{
-    background-color: $_green;
+    background-color: vars.$green;
     padding: 80px 20px;
-    @include media (tablet){
+    @include mixins.media (tablet){
         padding: 100px 159px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding: 100px;
     }
 }
@@ -63,11 +67,11 @@
     border-radius: 30px;
     min-width: 335px;
     min-height: 450px;
-    @include media (tablet){
+    @include mixins.media (tablet){
         min-width: 640px;
         min-height: 640px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         min-width: 430px;
         min-height: 559px;
     }
@@ -91,9 +95,9 @@
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: vars.$main_text;
   margin-bottom: 20px;
-  @include media (tablet){
+  @include mixins.media (tablet){
     font-size: 32px;
     line-height: 100%;
   }
@@ -103,13 +107,13 @@
 
 }
 .orderStepsText{
-font-family: $_second_family;
+font-family: vars.$second_family;
 font-weight: 400;
 font-size: 14px;
 line-height: 129%;
 margin-bottom: 40px;
 margin-top: 20px;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 16px;
     line-height: 125%;
 }
@@ -123,7 +127,7 @@ position: relative;
     position: relative;
     border-radius: 15px;
 padding: 12px 27px 12px 24px;
-background-color: $_main_text;
+background-color: vars.$main_text;
 font-weight: 400;
 font-size: 12px;
 line-height: 117%;
@@ -137,13 +141,13 @@ counter-increment: number;
 }
 
 .orderStepsList li p{
-    font-family: $_second_family;
+    font-family: vars.$second_family;
 font-weight: 400;
 font-size: 12px;
 line-height: 117%;
 letter-spacing: -0.02em;
 color: rgba(20, 20, 20, 0.6);
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 16px;
     line-height: 125%;
     }
@@ -151,7 +155,7 @@ color: rgba(20, 20, 20, 0.6);
 
 .orderStepsList li p span{
     font-weight: 700;
-    color: $_black;
+    color: vars.$black;
 }
 
 .orderStepsList li::before{
@@ -166,8 +170,8 @@ color: rgba(20, 20, 20, 0.6);
     font-style: 20px;
     line-height: 1;
     letter-spacing: -0.02em;
-    color: $_main_text;
-    background-color: $_beetroot;
+    color: vars.$main_text;
+    background-color: vars.$beetroot;
     border: 5px solid rgba(122, 49, 69, 0.3);
     border-radius: 100%;
     background-clip: content-box;
@@ -177,15 +181,15 @@ color: rgba(20, 20, 20, 0.6);
 font-size: 20px;
 line-height: 100%;
 letter-spacing: -0.02em;
-color: $_main_text;
+color: vars.$main_text;
 width: 52px;
 height: 52px;
 border-radius: 100%;
 flex-shrink: 0;
 background: radial-gradient(
-    $_beetroot,
-    $_beetroot 50%,
-    $_faded 50%,
-    $_faded 100%
+    vars.$beetroot,
+    vars.$beetroot 50%,
+    vars.$faded 50%,
+    vars.$faded 100%
 );
 }

@@ -1,7 +1,10 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+
+@use '../scss/vars';
+@use '../scss/mixins';
 .reviews {
-    background-color: $_main_text;
+    background-color: vars.$main_text;
     padding: 80px 20px;
 }
 .reviews h2 {
@@ -10,26 +13,26 @@ font-size: 48px;
 line-height: 104%;
 letter-spacing: -0.01em;
 text-transform: uppercase;
-color: $_black;
+color: vars.$black;
 margin-bottom: 20px;
-@include media (tablet){
+@include mixins.media (tablet){
 font-size: 64px;
 line-height: 100%;
 max-width: 553px;
 }
 }
 .reviews h2 span {
-    color: $_green
+    color: vars.$green
 }
 
 .reviews p {
-    font-family: $_second_family;
+    font-family: vars.$second_family;
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
-    color: $_black;
+    color: vars.$black;
     margin-bottom: 40px;
-    @include media (tablet){
+    @include mixins.media (tablet){
     font-size: 16px;
     line-height: 125%;
     max-width: 553px;
@@ -40,7 +43,7 @@ max-width: 553px;
 position: relative;
 }
 .reviews .swiper-pagination-bullet {
-background-color: $_green
+background-color: vars.$green
 }
 
 .reviews .slide{
@@ -50,10 +53,10 @@ background-color: $_green
     max-height: fit-content;
     display: block;
     margin-bottom: 8px;
-    @include media (tablet){ 
+    @include mixins.media (tablet){ 
         padding: 20px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         padding: 20px;
 
     }
@@ -72,7 +75,7 @@ font-size: 16px;
 line-height: 125%;
 letter-spacing: -0.02em;
 text-align: center;
-color: $_black;
+color: vars.$black;
 margin-bottom: 8px;
 
 }

@@ -1,6 +1,7 @@
-@import '../scss/variables';
-@import '../scss/mixins';
-
+// @import '../scss/variables';
+// @import '../scss/mixins';
+@use '../scss/vars';
+@use '../scss/mixins';
 header{
      background-color: transparent;
         position: absolute;
@@ -22,22 +23,22 @@ header{
     display: flex;
     width: fit-content;
     height: auto;
-    @include media(desktop){
+    @include mixins.media(desktop){
         display: none;
     }
 }
 
 .header-nav{
     display: none;
-    @include media (desktop){
+    @include mixins.media (desktop){
     display: flex;    
     align-items: center;
     gap: 20px;
     }
 }
 .open{
-    background-color: $_beetroot;
-    position: fixed;
+  background-color: vars.$beetroot;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -46,7 +47,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @include media (tablet){
+  @include mixins.media (tablet){
     width: 50%;
     left: 50%;
   }
@@ -74,7 +75,7 @@ header{
   display: block;
   margin-left: auto;
   margin-bottom: 88px;
-    @include media (desktop){
+    @include mixins.media (desktop){
         display: none;
     }
 }
@@ -85,20 +86,20 @@ header{
     gap: 8px;
     min-height: 52px;
     height: auto;
-    @include media (desktop){
+    @include mixins.media (desktop){
         flex-direction: row;
     }
   }
 
   .header-menu-link {
     display: block;
-    font-family: $_second_family;
+    font-family: vars.$second_family;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: $_main_text;
+    color: vars.$main_text;
     border: 1px solid rgba(251, 251, 251, 0.4);
     border-radius: 12px;
     padding: 12px;
@@ -121,22 +122,22 @@ header{
     line-height: 1.11;
     letter-spacing: -0.01em;
     text-transform: uppercase;    
-    background-color: $_main_text;
-    color: $_beetroot;
+    background-color: vars.$main_text;
+    color: vars.$beetroot;
     transition: background-color 250ms linear;
     align-self: center;
-    @include media (desktop){
-        background-color: $_beetroot;
-        color: $_main_text;
+    @include mixins.media (desktop){
+        background-color: vars.$beetroot;
+        color: vars.$main_text;
     }
   }
 
   .header-btn:hover,
   .header-btn:focus {
-    background-color: $_beetroot;
-    color: $_main_text;
-    @include media (desktop){
-        background-color: $_main_text;
-        color: $_beetroot;
+    background-color: vars.$beetroot;
+    color: vars.$main_text;
+    @include mixins.media (desktop){
+        background-color: vars.$main_text;
+        color: vars.$beetroot;
     }
   }

@@ -1,7 +1,10 @@
-@import '../scss/variables';
-@import '../scss/mixins';
+// @import '../scss/variables';
+// @import '../scss/mixins';
+
+@use '../scss/vars';
+@use '../scss/mixins';
 .harvestBox{
-    background-color: $_beetroot;
+    background-color: vars.$beetroot;
     padding-top: 80px;
     padding-bottom: 62px;
 }
@@ -11,11 +14,11 @@ font-size: 48px;
 line-height: 104%;
 letter-spacing: -0.01em;
 text-transform: uppercase;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 64px;
     line-height: 100%;
 }
-@include media (desktop){
+@include mixins.media (desktop){
     max-width: 751px;
 }
 }
@@ -24,19 +27,19 @@ text-transform: uppercase;
 }
 
 .harvestBox p{
-    font-family: $_second_family;
+    font-family: vars.$second_family;
     font-weight: 400;
 font-size: 14px;
 line-height: 129%;
 margin-top: 30px;
 margin-bottom: 40px;
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 16px;
     line-height: 125%;
     margin-top: 25px;
     margin-bottom: 50px;
 }
-@include media (desktop){
+@include mixins.media (desktop){
     max-width: 751px;
 }
 }
@@ -45,20 +48,20 @@ margin-bottom: 40px;
 display: flex;
 flex-direction: column;
 gap: 24px;
-@include media (desktop){
+@include mixins.media (desktop){
     flex-direction: row;
 }
 }
 .formWrapper{
-    background-color: $_main_text;
+    background-color: vars.$main_text;
     padding: 40px 20px;
     border-radius: 30px;
-    @include media (tablet){
+    @include mixins.media (tablet){
         padding: 50px 100px;
         margin-left: 36px;
         margin-right: 36px;
     }
-    @include media (desktop){
+    @include mixins.media (desktop){
         flex-grow: 1;
         padding: 50px;
         margin: 0;
@@ -67,15 +70,15 @@ gap: 24px;
 .formWrapper h3{
     font-size: 24px;
 line-height: 108%;
-    color: $_black;
+    color: vars.$black;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 .formWrapper h3 span:nth-child(1){
-    color: $_beetroot;
+    color: vars.$beetroot;
 }
 .formWrapper h3 span:nth-child(2){
-    color: $_green;
+    color: vars.$green;
 }
 
 .hbox-form{
@@ -89,17 +92,17 @@ border-radius: 30px;
 padding: 14px 16px;
 
 &::placeholder{
-    font-family: $_second_family;
+    font-family: vars.$second_family;
 font-weight: 400;
 font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.02em;
-color: $_black;
+color: vars.$black;
 }
 }
 .hbox-input:focus{
     outline: none;
-    border: 1px solid $_green;
+    border: 1px solid vars.$green;
     &::placeholder{
         color:rgba(53, 50, 50, 0.119)
     }
@@ -110,13 +113,13 @@ color: $_black;
 .hbox-form button{
     border-radius: 30px;
 padding: 16px 129px;
-background-color: $_green;
+background-color: vars.$green;
 font-weight: 600;
 font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.01em;
 text-transform: uppercase;
-color: $_main_text;
+color: vars.$main_text;
 border: none;
 margin-top: 10px;
 }
@@ -125,15 +128,15 @@ margin-top: 10px;
     padding: 14px 129px;
 }
 .socMedia{
-    background-color: $_green;
+    background-color: vars.$green;
     border-radius: 30px;
 padding: 40px 20px;
-@include media (tablet){
+@include mixins.media (tablet){
     padding: 50px;
     margin-left: 36px;
     margin-right: 36px;
 }
-@include media (desktop){
+@include mixins.media (desktop){
     // flex-grow: 1;
     padding: 50px;
     margin: 0;
@@ -172,7 +175,7 @@ font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.01em;
 color: rgba(251, 251, 251, 0.5);
-@include media (tablet){
+@include mixins.media (tablet){
     font-size: 18px;
     line-height: 111%;
     margin-top: 50px;
@@ -198,8 +201,8 @@ letter-spacing: -0.01em;
 font-size: 24px;
 line-height: 108%;
 letter-spacing: -0.01em;
-color: $_main_text;
-@include media (tablet){
+color: vars.$main_text;
+@include mixins.media (tablet){
     font-size: 32px;
 line-height: 100%;
 }

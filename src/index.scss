@@ -1,7 +1,10 @@
-@import './scss/variables';
-@import './scss/breakpoints';
-@import './scss/mixins.scss';
-* {
+// @import './scss/variables';
+// @import './scss/breakpoints';
+// @import './scss/mixins.scss';
+
+@use './scss/vars';
+@use './scss/mixins';
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -31,9 +34,9 @@
     list-style-type: none;
   }
   body{
-    background-color: $_green;
-    font-family: $_font_family, $_second_family;
-    color: $_main_text;
+    background-color: vars.$green;
+    font-family: vars.$font_family, vars.$second_family;
+    color: vars.$main_text;
     overflow-x: hidden;
     width: 100%;
     flex-wrap: wrap;
@@ -44,14 +47,14 @@
   .container {
     padding: 0 20px;
     margin: 0 auto;
-    @include media(mobile){
+    @include mixins.media(mobile){
       max-width: 375px;
     }
-    @include media(tablet){
+    @include mixins.media(tablet){
       padding: 0 32px;
       max-width: 768px;
     }
-    @include media(desktop){
+    @include mixins.media(desktop){
       padding: 0 100px;
       max-width: 1280px;
     }
