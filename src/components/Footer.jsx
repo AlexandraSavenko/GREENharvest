@@ -3,7 +3,7 @@ import Logo from "../images/logo.svg";
 import '../scss/Footer.scss'
 export default function Footer () {
     return <footer className='footerSection'>
-         <div className="container footer">
+        <div className="container footer">
             <div className='footerContent'>
         <div className="footerLogoBox">
             <Logo className='footerLogo'/>
