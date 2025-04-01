@@ -39,9 +39,6 @@ export default function Hbox (){
             <li><a href="">facebook</a></li>
             <li><a href="">youtube</a></li>
         </ul>
-        
-        
-        
     </div>
     </div>
     </div>
