@@ -9,6 +9,12 @@ import NavLinks from './NavLinks'
 
 export default function Header (){
     const [navOpen, setNavOpen] = useState(false)
+
+    const handleModalMenu = () => {
+        if(navOpen){
+            setNavOpen(false)
+        } 
+    }
     return <header>
         <div className="container">
             <div className="header-wrap">
@@ -23,7 +29,7 @@ export default function Header (){
         <IoClose className="close-menu-btn" onClick={()=>{
             setNavOpen(!navOpen)
         }} />
-        <NavLinks location={'header'}/>
+        <NavLinks location={'header'} onMenuOpen={handleModalMenu}/>
             {/* <ul className="header-menu-list">
                 <li><a className="header-menu-link" href='#how'>how it works</a></li>
                 <li><a className="header-menu-link" href='#veges'>vegetables</a></li>
