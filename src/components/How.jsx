@@ -2,7 +2,7 @@ import OrderSteps_1x_min from "../images/OrderSteps_1x_min.jpg"
 import OrderSteps_2x_min from "../images/OrderSteps_2x_min.jpg"
 import '../scss/How.scss'
 export default function OrderStepsSection () {
-    return <section className="how-section">
+    return <section id="how" className="how-section">
         <div className="container how">
             <h2 className="visually_hidden">purchase instructions</h2>
     <div className="f-how">

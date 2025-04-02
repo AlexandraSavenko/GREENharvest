@@ -26,6 +26,7 @@
     padding: 12px;
     background-color: transparent;
     transition: color 250ms linear, background-color 250ms linear;
+    cursor: pointer;
   }
 
   .headerItem:hover,
@@ -45,4 +46,5 @@ font-size: 28px;
 line-height: 100%;
 letter-spacing: -0.01em;
 color: vars.$main_text;
+cursor: pointer;
 }

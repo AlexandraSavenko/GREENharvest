@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import {Link} from 'react-scroll'
 import '../scss/NavLinks.scss'
 export default function NavLinks ({location}){
     const list = clsx({
@@ -13,10 +14,10 @@ export default function NavLinks ({location}){
       );
      
     return <ul className={list}>
-    <li><a className={item} href='#how'>how it works</a></li>
-    <li><a className={item} href='#veges'>vegetables</a></li>
-    <li><a className={item} href='#reviews'>reviews</a></li>
+    <li><Link to="how" smooth='true' duration={500} className={item}>how it works</Link></li>
+    <li><Link to="veges" smooth='true' duration={500} className={item}>vegetables</Link></li>
+    <li><Link to="reviews" smooth='true' duration={500} className={item}>reviews</Link></li>
 </ul>
 }
 
-
+{/* <Link to="section1" smooth={true} duration={500}>Section 1</Link> */}
