@@ -6,6 +6,12 @@
 .reviews {
     background-color: vars.$main_text;
     padding: 80px 20px;
+    @include mixins.media(tablet){
+        padding: 100px 32px;
+    }
+    @include mixins.media (desktop){
+        padding: 100px;
+    }
 }
 .reviews h2 {
     font-weight: 600;
