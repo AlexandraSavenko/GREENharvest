@@ -2,10 +2,10 @@
 @use './mixins';
 .scroll-up{
     background-color: vars.$green;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     left: 5%;
     border-radius: 50%;
     cursor: pointer;
