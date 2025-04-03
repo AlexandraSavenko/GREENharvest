@@ -20,4 +20,3 @@ export default function NavLinks ({location, onMenuOpen}){
 </ul>
 }
 
-{/* <Link to="section1" smooth={true} duration={500}>Section 1</Link> */}

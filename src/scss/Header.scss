@@ -81,39 +81,7 @@ header{
         display: none;
     }
 }
-// .header-menu-list {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 8px;
-//     min-height: 52px;
-//     height: auto;
-//     @include mixins.media (desktop){
-//         flex-direction: row;
-//     }
-//   }
 
-//   .header-menu-link {
-//     display: block;
-//     font-family: vars.$second_family;
-//     font-weight: 500;
-//     line-height: 1.25;
-//     letter-spacing: -0.02em;
-//     text-align: center;
-//     text-transform: capitalize;
-//     color: vars.$main_text;
-//     border: 1px solid rgba(251, 251, 251, 0.4);
-//     border-radius: 12px;
-//     padding: 12px;
-//     background-color: transparent;
-//     transition: color 250ms linear, background-color 250ms linear;
-//   }
-
-//   .header-menu-link:hover,
-//   .header-menu-link:focus {
-//     color: #7a3145;
-//     background-color: #fbfbfb;
-//   }
 .header-btn {
     width: fit-content;
     padding: 16px 32px;

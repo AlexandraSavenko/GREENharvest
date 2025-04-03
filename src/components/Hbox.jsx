@@ -15,7 +15,7 @@ export default function Hbox (){
         email: Yup.string().email("Must be a valid email!").required("Required"),
         comment: Yup.string().min(2, "Too short").max(256, "Too long").required("Required"),
       });
-    return <section className='harvestBox-section'>
+    return <section  id="hbox" className='harvestBox-section'>
         <div className="container harvestBox">
             <h2>FRESH <span>HARVEST</span> BOX HAS GOT YOU COVERED</h2>
     <p>Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best nature has to offer!</p>

@@ -5,6 +5,8 @@ import clsx from "clsx";
 import Burger from '../images/burger-min.svg'
 import { IoClose } from "react-icons/io5";
 import NavLinks from './NavLinks'
+import {Link} from 'react-scroll'
+
 
 
 export default function Header (){
@@ -30,12 +32,7 @@ export default function Header (){
             setNavOpen(!navOpen)
         }} />
         <NavLinks location={'header'} onMenuOpen={handleModalMenu}/>
-            {/* <ul className="header-menu-list">
-                <li><a className="header-menu-link" href='#how'>how it works</a></li>
-                <li><a className="header-menu-link" href='#veges'>vegetables</a></li>
-                <li><a className="header-menu-link" href='#reviews'>reviews</a></li>
-            </ul> */}
-            <button className="header-btn">shop now</button>
+            <div className="header-btn"><Link to="hbox" smooth='true' duration={500}>shop now</Link></div>
         </nav>
         </div>
         </div>
