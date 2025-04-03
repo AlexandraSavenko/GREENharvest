@@ -48,9 +48,9 @@ export default function Hbox (){
         </div>
         <p>Follow us on our social networks:</p>
         <ul className='socMediaLinks'>
-            <li><a href="">instagram</a></li>
-            <li><a href="">facebook</a></li>
-            <li><a href="">youtube</a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/in/sasha-savenko">instagram</a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/in/sasha-savenko">facebook</a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/in/sasha-savenko">youtube</a></li>
         </ul>
     </div>
     </div>
