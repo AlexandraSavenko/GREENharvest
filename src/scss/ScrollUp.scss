@@ -1,0 +1,27 @@
+@use './vars';
+@use './mixins';
+.scroll-up{
+    background-color: vars.$green;
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+    @include mixins.media (desktop){
+        width: 56px;
+        height: 56px;
+}
+}
+.scroll-up-show{
+    display: block;
+}
+.up-icon{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+
+}

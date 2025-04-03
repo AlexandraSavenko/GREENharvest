@@ -7,6 +7,7 @@ import Veges from './components/Veges'
 import Reviews from './components/Reviews'
 import Hbox from './components/Hbox'
 import Footer from './components/Footer'
+import ScrollUp from './components/ScrollUp'
 
 function App() {
    
@@ -19,7 +20,7 @@ return <div>
      <Reviews/>
      <Hbox/>
      <Footer/>
-
+     <ScrollUp/>
 </div>
 
 }
