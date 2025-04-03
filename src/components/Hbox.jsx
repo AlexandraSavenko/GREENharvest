@@ -3,6 +3,8 @@ import HarvestBox_2x_min from "../images/HarvestBox_2x_min.jpg"
 import '../scss/Hbox.scss'
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 
@@ -27,6 +29,7 @@ export default function Hbox (){
         comment: '',
     }} 
     onSubmit={(value, action)=> {
+        toast.success("Form submitted successfully!");
         console.log(value)
         action.resetForm()
     }}
@@ -38,8 +41,10 @@ export default function Hbox (){
         <Field placeholder='Email' className='hbox-input hbox-email' type="email" name="email"/>
         <Field placeholder='Comment' className='hbox-input hbox-comment' as="textarea" name="comment" rows="5" />
         <button type="submit">send</button>
+      <ToastContainer/>
       </Form>
     </Formik>
+    
 </div>
     <div className='socMedia'>
         <div className="socMedia-image">
