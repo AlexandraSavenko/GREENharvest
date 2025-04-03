@@ -39,6 +39,8 @@
     }
     @include mixins.media (desktop){
         padding: 100px;
+        width: 50%;
+        flex-shrink: 0;
     }
 }
 .s-how{
