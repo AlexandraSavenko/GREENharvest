@@ -2,9 +2,16 @@ import HarvestBox_1x_min from "../images/HarvestBox_1x_min.jpg"
 import HarvestBox_2x_min from "../images/HarvestBox_2x_min.jpg"
 import '../scss/Hbox.scss'
 import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
+
 
 
 export default function Hbox (){
+    const FeedbackSchema = Yup.object().shape({
+        username: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("Required"),
+        email: Yup.string().email("Must be a valid email!").required("Required"),
+        comment: Yup.string().min(2, "Too short").max(256, "Too long").required("Required"),
+      });
     return <section className='harvestBox-section'>
         <div className="container harvestBox">
             <h2>FRESH <span>HARVEST</span> BOX HAS GOT YOU COVERED</h2>
@@ -12,14 +19,19 @@ export default function Hbox (){
 <div className='box-wrapper'>
 <div className='formWrapper'>
     <h3>ordering <span>from us</span>  is quick and easy! Fill out <span>this form</span>  below and we will contact you!</h3>
-    <Formik initialValues={{
+    <Formik 
+    initialValues={{
         username: '',
         email: '',
         comment: '',
-    }} onSubmit={(value, action)=> {
+    }} 
+    onSubmit={(value, action)=> {
         console.log(value)
         action.resetForm()
-    }}>
+    }}
+    validationSchema={FeedbackSchema}
+
+    >
       <Form className="hbox-form">
         <Field placeholder='Full Name' className='hbox-input hbox-name' type="text" name="username"/>
         <Field placeholder='Email' className='hbox-input hbox-email' type="email" name="email"/>
